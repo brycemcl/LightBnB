@@ -134,7 +134,7 @@ const getAllProperties = function (options, limit = 10) {
   let query = `
 SELECT properties.*, avg(property_reviews.rating) as average_rating
 FROM properties
-JOIN property_reviews ON properties.id = property_id`;
+FUll JOIN property_reviews ON properties.id = property_id`;
   if (city || owner_id || minimum_price_per_night || maximum_price_per_night) {
     query += "\n" + `WHERE`;
   }
